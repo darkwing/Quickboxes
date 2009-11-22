@@ -1,3 +1,12 @@
+/*
+Script: Quickboxes
+
+License: MIT-style license.
+
+Copyright: Copyright (c) 2007-2009 [David Walsh](http://davidwalsh.name/).
+
+Author: David Walsh (http://davidwalsh.name)
+*/
 var Quickboxes = new Class({
 
 	//implements
