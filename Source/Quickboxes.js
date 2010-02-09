@@ -58,13 +58,13 @@ var Quickboxes = new Class({
 					active = 0; 
 				}
 			});
+			var label = $$('label[for=' + el.get('id') + ']');
+			if(label.length) {
+				label[0].addEvent('click',function() {
+					el.checked = !el.checked;
+				});
+			}
 		}.bind(this));
-		var label = $$('label[for=' + el.get('id') + ']');
-		if(label.length) {
-			label[0].addEvent('click',function() {
-				el.checked = !el.checked;
-			});
-		}
 		window.addEvent('mouseup',function() { active = 0; });
 	}
 });
